@@ -1,6 +1,6 @@
 import React from "react";
 import PartnersSection from '../main/PartnersSection';
-import PressSection from "../main/PressSection";
+import PressSection from "..//../components/press/PressSection";
 import siteConfig from "../../config/siteConfig";
 
 
