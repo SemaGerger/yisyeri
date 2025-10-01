@@ -63,7 +63,7 @@ export default function Footer() {
               <li> <a href="/iletisim" className="hover:text-blue-400">
                   {siteConfig.FOOTER_APP.CONTACT_TITLE} </a>
               </li>
-              <li> <a href="/hakkimizda#basvuru-sartlari" className="hover:text-blue-400">
+              <li> <a href="/hakkimizda" className="hover:text-blue-400">
                   {siteConfig.FOOTER_APP.CONDITION} </a>
               </li>
             </ul>
