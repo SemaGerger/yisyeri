@@ -4,8 +4,8 @@ import logo2 from "../assets/logos/Yesil_isyeri_logo2.png";
 import whiteYazi from "../assets/images/logo_yazi3.png";
 import logo from "../assets/logos/Yesil_isyeri_logo.png";
 
-import heroVideo from "../assets/videos/yisyeriVideo.webp";
-import basindabiz from "../assets/videos/basindabiz.webp";
+import heroVideo from "../assets/videos/yisyeriVideo.mp4";
+import basindabiz from "../assets/videos/basindabiz.mp4";
 
 import aboutImage1 from "../assets/images/about/Image1.jpg";
 import aboutImage2 from "../assets/images/about/Image2.jpg";
