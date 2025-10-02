@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/baskan-hakkinda" element={<AboutPresident />} />
          <Route path="/baskan" element={<AboutPresident />} />
 
-        <Route path="/esit-isyerleri" element={<PartnersPage />} />
+        <Route path="/yesil-isyerleri" element={<PartnersPage />} />
         <Route path="/isyerleri" element={<PartnersPage />} />
 
         <Route path="/detay/:id" element={<PartnerDetailsPage />} />
@@ -26,11 +26,10 @@ export default function App() {
      
         <Route path="/hakkimizda" element={<About />} />
         <Route path="/basvuru-sartlari" element={<About />} />
-        <Route path="/esit-isyeri-nedir" element={<About />} />
+        <Route path="/yesil-isyeri-nedir" element={<About />} />
 
         <Route path="/iletisim" element={<Contact />} />
         <Route path="/logomuz" element={<Logomuz />} />
-     
 
         <Route path="/test" component={TestPage} />
       </Routes>
