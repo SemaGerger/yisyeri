@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../layouts/Layout";
-import { logo } from "../api/DefaultData";
+
 import siteConfig from "../config/siteConfig";
 import PageTitle from "../components/pageCards/PageTitle";
 
