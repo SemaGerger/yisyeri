@@ -3,6 +3,7 @@ import logo1 from "../assets/logos/Yesil_isyeri_logo1.png";
 import logo2 from "../assets/logos/Yesil_isyeri_logo2.png";
 import whiteYazi from "../assets/images/logo_yazi3.png";
 import logo from "../assets/logos/Yesil_isyeri_logo.png";
+import tescil from "../assets/images/tescil.png";
 
 import heroVideo from "../assets/videos/yisyeriVideo.mp4";
 import basindabiz from "../assets/videos/basindabiz.mp4";
@@ -164,11 +165,11 @@ vergi ve harçlarda indirimlerle destekliyoruz.
 
   LOGOS: [
     { id: 1, TITLE: "", IMAGE: logo },
-    { id: 2, TITLE: "", IMAGE: "" },
+    { id: 2, TITLE: "", IMAGE: tescil },
   ],
 
   form: {
-    ctaButton: "https://ulakbel.bcekmece.bel.tr/WebBasvuru/esitisyeri#/",
+    ctaButton: "https://ulakbel.bcekmece.bel.tr/WebBasvuru/yesilisyeri#/",
   },
 
   theme: {
@@ -273,7 +274,7 @@ export const ABOUT_DATA = [
 ];
 
 export const ABOUT_DATA_APP= {
-    TITLE: "Yeşil İşyeri Projesi",
+    TITLE: "Yeşil İşyerleri Projesi",
     SUBTITLE: "İşletmelerde çevre bilinci, sürdürülebilirlik ve enerji verimliliğini teşvik etmek için tasarlanmış kapsamlı bir çevre dostu dönüşüm programı"
 };
 
