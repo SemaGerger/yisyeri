@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import StoryCard from "../../components/section/StoryCard";
-
 import siteConfig from "../../config/siteConfig";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -14,6 +13,20 @@ const StoryCardContainer = ({ partners }) => {
   const [scrollLeft, setScrollLeft] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [totalVisibleItems, setTotalVisibleItems] = useState(0);
+  const [shouldCenter, setShouldCenter] = useState(false);
+
+  // Partnere göre ortala
+  useEffect(() => {
+    if (containerRef.current && partners.length > 0) {
+      const container = containerRef.current;
+      const itemWidth = container.querySelector('.scroll-item')?.offsetWidth || 240;
+      const containerWidth = container.clientWidth;
+      const totalItemsWidth = partners.length * itemWidth;
+      
+      // ortala
+      setShouldCenter(totalItemsWidth <= containerWidth);
+    }
+  }, [partners]);
 
   const updateScrollIndicator = useCallback(() => {
     if (containerRef.current && partners.length > 0) {
@@ -36,7 +49,6 @@ const StoryCardContainer = ({ partners }) => {
       setShowLeftArrow(scrollLeft > 0);
       setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
       
-      // Nokta indikatörünü güncelle
       updateScrollIndicator();
     }
   }, [updateScrollIndicator]);
@@ -113,22 +125,21 @@ const StoryCardContainer = ({ partners }) => {
     ? Math.ceil(partners.length / totalVisibleItems) 
     : 0;
 
- 
-
   return (
     <div className="relative mt-8 mb-28">
-      {showLeftArrow && (
+      {/* Oklar */}
+      {!shouldCenter && showLeftArrow && (
         <button
           onClick={scrollLeftHandler}
           className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 
                    bg-white/80 hover:bg-white rounded-full p-2 shadow-lg 
-                   transition-all duration-200 backdrop-blur-sm "
+                   transition-all duration-200 backdrop-blur-sm"
         >
           <ChevronLeft className="w-6 h-6 text-gray-700" />
         </button>
       )}
 
-      {showRightArrow && (
+      {!shouldCenter && showRightArrow && (
         <button
           onClick={scrollRightHandler}
           className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 
@@ -141,8 +152,9 @@ const StoryCardContainer = ({ partners }) => {
 
       <div
         ref={containerRef}
-        className="flex overflow-x-auto hide-scrollbar py-4 px-2 cursor-grab active:cursor-grabbing"
-
+        className={`flex overflow-x-auto hide-scrollbar py-4 px-2 cursor-grab active:cursor-grabbing ${
+          shouldCenter ? 'justify-center' : ''
+        }`}
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
@@ -157,12 +169,10 @@ const StoryCardContainer = ({ partners }) => {
 
           let image = siteConfig.LOGO;
           try {
-            
             const filesJson = cells[16]?.Value || "[]";
             const files = JSON.parse(filesJson);
             if (Array.isArray(files) && files.length > 0) {
               image = files[0]?.src ?? siteConfig.LOGO;
-              
             }
           } catch (err) {
             console.warn("Resim verisi okunamadı:", err);
@@ -193,7 +203,8 @@ const StoryCardContainer = ({ partners }) => {
         })}
       </div>
 
-      {dotCount > 1 && (
+      {/* Nokta ind */}
+      {!shouldCenter && dotCount > 1 && (
         <div className="flex justify-center mt-4 space-x-2">
           {Array.from({ length: dotCount }).map((_, index) => (
             <button

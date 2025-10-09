@@ -17,8 +17,12 @@ import aboutImage3 from "../assets/images/about/Image3.jpg";
 import president from "../assets/images/HasanAkgun.png";
 
 
+
 const siteConfig = {
 
+
+
+  
   PRESS_DATA: [
     { id: 1, title: "Show", video: basindabiz },
     { id: 2, title: "Show", video: heroVideo },
@@ -105,8 +109,10 @@ vergi ve harçlarda indirimlerle destekliyoruz.
   WHITE_TEXT: whiteYazi,
   HERO_HIGHLIGHT: "Projesi",
   CTATEXT: "İşyerinizi Kaydedin",
-  CTAURL: "https://ulakbel.bcekmece.bel.tr/WebBasvuru/esitisyeri#/",
-  HERO_VİDEO: heroVideo,
+  CTAURL: "https://ulakbel.bcekmece.bel.tr/WebBasvuru/yesilisyeri#/",
+  CTA2TEXT: "Bücep Grubuna Katılın",
+  CTA2URL: "https://bucep.peerbie.com/X1Ft8OUiiXb",
+  HERO_VIDEO: heroVideo,
 
   loading: "Yükleniyor...",
 

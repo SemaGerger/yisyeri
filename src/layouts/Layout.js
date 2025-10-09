@@ -1,24 +1,21 @@
-import React, { useState, useEffect } from "react";
+
+import { useLocation } from "react-router-dom";
 import Header from "../layouts/main/header/Header";
 import Footer from "../layouts/main/Footer";
-import CTAButton from "../components/button/CTAButton";
+import CTAButton1 from "../components/button/CTAButton1";
+import CTAButton2 from "../components/button/CTAButton2";
+import siteConfig from "../config/siteConfig";
 
 const Layout = ({ children }) => {
-  const [showFixedCTA, setShowFixedCTA] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Hero bölümünü yüksekliüği
-      const heroHeight = window.innerHeight;
-      setShowFixedCTA(window.scrollY > heroHeight * 0.8);
-    };
+  const location = useLocation();
 
-    window.addEventListener('scroll', handleScroll);
-    // İlk yüklemede kontrol
-    handleScroll();
+  // Anasayfa mı
+  const isHomePage = location.pathname === "/";
+  // Anasayfa DEĞİLSE
+  const showCTA = !isHomePage;
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -26,9 +23,13 @@ const Layout = ({ children }) => {
       <main className="flex-grow">{children}</main>
       
       {/* Fixed CTA button */}
-      {showFixedCTA && (
-        <div className="fixed bottom-6 right-6 z-50">
-          <CTAButton isFixed={true} />
+      {showCTA && (
+        <div className="fixed bottom-6 left-4 right-4 flex justify-between z-50 md:left-6 md:right-6">
+          <CTAButton2 isFixed={true} href={siteConfig.CTA2URL} >  {siteConfig.CTATEXT}
+          </CTAButton2>
+          <CTAButton1 isFixed={true} href={siteConfig.CTAURL} >   {siteConfig.CTATEXT}
+          </CTAButton1>
+         
         </div>
       )}
       
