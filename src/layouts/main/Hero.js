@@ -53,13 +53,13 @@ const Hero = () => {
 
           {/* CTA Butonlar */}
           <div className="flex justify-center mt-10 space-x-4">
-            <CTAButton2
+            <CTAButton2 className ="cursor-pointer"
               isFixed={false}
               href={siteConfig.CTA2URL}
             >
               {siteConfig.CTA2TEXT}
             </CTAButton2>
-            <CTAButton1
+            <CTAButton1 className ="cursor-pointer"
               isFixed={false}
               href={siteConfig.CTAURL}
             >
@@ -74,13 +74,13 @@ const Hero = () => {
       {/* Aşağı Kaydırınca Görünür */}
       {isScrolled && (
         <div className="fixed bottom-6 left-4 right-4 flex justify-between z-50 md:left-6 md:right-6">
-          <CTAButton2
+          <CTAButton2 className ="cursor-pointer"
             isFixed={true}
             href={siteConfig.CTA2URL}
           >
             {siteConfig.CTA2TEXT}
           </CTAButton2>
-          <CTAButton1
+          <CTAButton1 className ="cursor-pointer"
             isFixed={true}
             href={siteConfig.CTAURL}
           >
