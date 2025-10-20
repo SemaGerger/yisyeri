@@ -25,8 +25,8 @@ const siteConfig = {
   
   PRESS_DATA: [
     { id: 1, title: "Show", video: basindabiz },
-    { id: 2, title: "Show", video: heroVideo },
-    { id: 3, title: "Show", video: basindabiz },
+    { id: 2, title: "yesilisyeri", video: heroVideo }
+ ,
 
   ],
   PRESS_DATA_APP: {
@@ -236,7 +236,17 @@ vergi ve harçlarda indirimlerle destekliyoruz.
     {
       id: 1,
       TITLE: "BAŞKANIN MESAJI",
-      TEXT: "Yeşil İşyeri projemizin amacı, .....",
+      TEXT: `Yeşil İşyeri projemizin amacı şehrimiz genelinde işyerlerinde enerji verimliliğini artırmak, 
+      enerji kayıplarını önlemek veya en aza indirmek, çevre dostu önlemlerin uygulanmasını sağlamak ve 
+farkındalık yaratmak amacıyla Yeşil İşyeri projesi başlatılmıştır. 
+Yeşil İşyeri Projemiz ile şehrimizde bulunan işletmelerin faaliyetlerinde çevreci davranışlar hususunda 
+bireysel hedefler koyulmasının, enerji tasarrufu, kazanımı ve çevrenin korunmasına yönelik olarak 
+yapılacak denetimlerde enerji ve çevre konusunda daha verimli ve temiz olarak çalışmasını 
+sağlamaktır.  
+Enerji verimli ekipman ve sistem kullanımı, yalıtım, rehabilitasyon ve proses düzenleme gibi yollarla; 
+gereksiz enerji kullanımının atık enerjinin, enerji kayıp ve kaçaklarının önlenmesi veya en aza 
+indirilmesi ile birlikte atık enerjinin geri kazanılması ve çevre dostu önlemler gibi konulardaki 
+çözümleri de kapsayan bir projedir. `,
       IMAGE: president,
     },
   ],
@@ -252,29 +262,27 @@ export const ABOUT_DATA = [
   {
     id: 1,
     TITLE: "Yeşil İşyeri Nedir?",
-    TEXT: "Yeşil İşyeri, işletmelerin enerji tasarrufu, doğal kaynakların verimli kullanımı, atıkların azaltılması ve çevre dostu uygulamaları hayata geçirerek çevreye duyarlı bir yapıya kavuşmasını sağlayan bir projedir. Büyükçekmece Belediyesi’nin öncülüğünde hayata geçirilen bu proje ile işletmeler, sürdürülebilirlik ilkelerini benimseyerek hem çevreye katkı sağlamakta hem de ekonomik avantajlar elde etmektedir.",
+    TEXT: `Büyükçekmece Belediyesi olarak; 
+İşyerlerinde enerji verimliliğini artırmak, enerji kayıplarını önlemek veya en aza indirmek, çevre dostu önlemlerin uygulanmasını sağlamak ve farkındalık yaratmak amacıyla Yeşil İşyeri 
+Projesi başlatılmıştır. `,
     IMAGE: aboutImage1,
   },
 
   {
     id: 2,
     TITLE: "Neden Almalıyım?",
-    TEXT: `-İşletmenizin çevre dostu kimliğini güçlendirir ve prestij kazandırır.
-              -Elektrik ve doğalgaz faturalarında ciddi düşüş sağlar.
-              -Belediye tarafından sağlanan ilan, reklam ve tabela vergilerinde %50’ye varan indirim imkânı sunar.
-              -Enerji verimliliği sayesinde uzun vadede maliyetlerinizi azaltır.
-              -Çalışan ve müşterileriniz için çevreye duyarlı bir marka imajı oluşturur.`,
+    TEXT: `İşyerinin enerji verimliliğinde yapacağı iyileşmeye göre: 
+-İyileşme %4 ile %10 arası ise Bronz Sertifika verilerek ruhsat ve tabela ücretlerinde %30 indirim sağlanacaktır. 
+-İyileşme %10 ile %16 arası ise Gümüş Sertifika verilerek ruhsat ve tabela ücretlerinde %40 indirim sağlanacaktır. 
+-İyileşme %16 ile %22 arası ise Altın Sertifika verilerek ruhsat ve tabela ücretlerinde %50 indirim sağlanacaktır. 
+-İyileşme %22 ve üzerinde ise Platin Sertifika verilerek ruhsat ve tabela ücretlerinde %75 indirim sağlanacaktır.` ,
     IMAGE: aboutImage2,
   },
 
   {
     id: 3,
     TITLE: "Başvuru Şartları",
-    TEXT: `-Enerji Bakanlığı onaylı Enerji Verimliliği Danışmanlığı (EVD) firması ile anlaşma yapılması.
-              -İş yerinde enerji etüdü raporunun hazırlanması ve tespit edilen eksikliklerin giderilmesi.
-              -İkinci enerji etüdü sonucunda belirlenen verimlilik oranına ulaşılması (%16–22 arası başarı gösteren işletmelere “Altın Plaket” verilmekte).
-              -Raporların belediyeye sunulması ve denetimden geçilmesi.
-              -Belirlenen kriterleri yerine getiren işletmelerin “Yeşil İşyeri Sertifikası” almaya hak kazanması.`,
+    TEXT: `Büyükçekmece ilçesindeki tüm işyerleri Yeşil İşyeri projesine müracaat edebilir. `,
     IMAGE: aboutImage3,
   }
 ];

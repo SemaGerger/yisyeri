@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CTAButton from "../../../components/button/CTAButton";
+
 import siteConfig from "../../../config/siteConfig";
 
 const Navbar = () => {
@@ -99,7 +99,15 @@ const Navbar = () => {
           <div className="w-full h-px bg-gray-200"></div>
 
           {/* CTA Button */}
-          <CTAButton className="" />
+          <a
+            href={siteConfig.CTAURL}
+            className="bg-green-600 hover:bg-green-700 text-white focus:ring-green-500 px-4 py-2 sm:px-8 sm:py-3 rounded-lg shadow-lg transform hover:-translate-y-1 hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {siteConfig.CTATEXT}
+          </a>
+
 
           {/* Belediye Logo */}
           <div className="flex justify-center w-full pt-4 border-t border-gray-100">

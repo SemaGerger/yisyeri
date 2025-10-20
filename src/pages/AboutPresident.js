@@ -9,7 +9,7 @@ const AboutPresident = () => {
       {siteConfig.ABOUT_PRESIDENT.map((item) => (
         <div
           key={item.id}
-          className="grid md:grid-cols-2 gap-8 bg-white rounded-2xl shadow-2xl overflow-hidden max-w-4xl w-full"        >
+          className="grid md:grid-cols-2 gap-8 bg-white rounded-2xl shadow-2xl overflow-hidden max-w-5xl w-full"        >
          
 
           {/* Text */}

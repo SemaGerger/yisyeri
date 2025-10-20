@@ -49,7 +49,7 @@ const PressSection = () => {
       {/* Video container */}
       <div className="max-w-7xl w-full">
         {/* 3  */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-12">
           {firstThree.map((item) => (
             <PressCard
               key={item.id}
