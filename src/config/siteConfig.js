@@ -7,6 +7,7 @@ import tescil from "../assets/images/tescil.png";
 
 import heroVideo from "../assets/videos/yisyeriVideo.mp4";
 import basindabiz from "../assets/videos/basindabiz.mp4";
+import marsLojistikVideo from "../assets/videos/2026-255_Ruh-Mars_Lojstik_Uluslararasi_Tasimacilik.mp4";
 
 import aboutImage1 from "../assets/images/about/Image1.jpg";
 import aboutImage2 from "../assets/images/about/Image2.jpg";
@@ -25,9 +26,8 @@ const siteConfig = {
   
   PRESS_DATA: [
     { id: 1, title: "Show", video: basindabiz },
-    { id: 2, title: "yesilisyeri", video: heroVideo }
- ,
-
+    { id: 2, title: "yesilisyeri", video: heroVideo },
+    { id: 3, title: "Mars Lojistik Uluslararası Taşımacılık", video: marsLojistikVideo },
   ],
   PRESS_DATA_APP: {
     TITLE: "Basında Biz",

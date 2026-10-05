@@ -11,19 +11,19 @@ const PressCard = ({ name, image, video, onClick, className = "" }) => {
     >
       {/* Video varsa */}
       {isValidSrc ? (
-        <div className="relative">
+        <div className="relative w-full aspect-video bg-black overflow-hidden">
           <video
             src={video}
-            className="w-full h-48 object-cover"
+            className="w-full h-full object-cover"
             muted
             playsInline
           />
           <MiniPreviewVideo src={video} previewTime={5000} />
         </div>
       ) : image ? (
-        <img src={image} alt={name} className="w-full h-48 object-cover" />
+        <img src={image} alt={name} className="w-full aspect-video object-cover" />
       ) : (
-        <div className="w-full h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-gray-500">
+        <div className="w-full aspect-video bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-gray-500">
           <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
             <path
               fillRule="evenodd"
