@@ -38,7 +38,7 @@ const siteConfig = {
   NAVLINKS: [
     { NAME: "Ana Sayfa", TO: "/" },
     { NAME: "Başkan Hakkında", TO: "/baskan-hakkinda" },
-    { NAME: "Yeşil İşyeri", TO: "/isyerleri" },
+    // { NAME: "Yeşil İşyeri", TO: "/isyerleri" },
     { NAME: "Hakkımızda", TO: "/hakkimizda" },
     { NAME: "Bize Ulaşın", TO: "/iletisim" },
     { NAME: "Logomuz", TO: "/logomuz" },

@@ -1,5 +1,5 @@
 import React from "react";
-import PartnersSection from '../main/PartnersSection';
+// import PartnersSection from '../main/PartnersSection';
 import PressSection from "..//../components/press/PressSection";
 import siteConfig from "../../config/siteConfig";
 
@@ -8,9 +8,9 @@ const Main = () => {
   return (
     <main className="py-20 px-6 md:px-20 bg-white-50 ">
       {/* Destek verenler */}
-      <section className="mb-20">
+      {/* <section className="mb-20">
         <PartnersSection />
-      </section>
+      </section> */}
 
 
       {/*   Büyükçekmece Belediyesi Ruhsat ve Denetim Müdürlüğü text */}
